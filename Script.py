@@ -83,7 +83,6 @@ class Decryption:
 
 space_count = 30 * ' '
 cprint('{} File Encryption And Decryption Tool. {}'.format(space_count,space_count), 'red')
-cprint('{} {}'.format(space_count + 3 * ' ','Programmed by Sri Manikanta.'),'green')
 while True:
 		cprint('1. Encryption',color='magenta')
 		cprint('2. Decryption',color='magenta')
@@ -93,12 +92,6 @@ while True:
 		choice = int(input())
 
 		if choice == 1:
-			logo = '''  ___                       _   _          
- | __|_ _  __ _ _ _  _ _ __| |_(_)___ _ _  
- | _|| ' \/ _| '_| || | '_ \  _| / _ \ ' \ 
- |___|_||_\__|_|  \_, | .__/\__|_\___/_||_|
-                  |__/|_|                  '''
-			cprint(logo,color='red',attrs=['bold'])
 			cprint('Enter the filename for Encryption with proper extension:',end=' ',color='yellow',attrs=['bold'])
 			file = input()
 			E1 = Encryption(file)
@@ -112,12 +105,6 @@ while True:
 				break
 
 		elif choice == 2:
-			logo = '''  ___                       _   _          
- |   \ ___ __ _ _ _  _ _ __| |_(_)___ _ _  
- | |) / -_) _| '_| || | '_ \  _| / _ \ ' \ 
- |___/\___\__|_|  \_, | .__/\__|_\___/_||_|
-                  |__/|_|                  '''
-			cprint(logo,color='red',attrs=['bold'])
 			cprint('Enter the Encrypted filename with proper extension:',end=' ',color='yellow',attrs=['bold'])
 			file = input()
 			D1 = Decryption(file)
